@@ -1,0 +1,132 @@
+/* SHARED  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.para {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(30, 10%, 34%);
+  line-height: 1.5rem;
+  margin-block: 20px;
+}
+
+.heading {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+ul li::marker {
+  color: hsl(14, 45%, 36%);
+  font-size: 0.8rem;
+  line-height: 2.5rem;
+  margin-right: 20px;
+}
+
+ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.cal {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+
+hr {
+  margin-block: 25px;
+  height: 0.5px;
+  color: hsl(32, 21%, 76%);
+}
+
+ul li,
+ol li {
+  padding-left: 20px;
+  margin-left: 20px; /* Adds space to the left of each list item */
+}
+
+/* SHARED */
+
+body {
+  font-family: "Young Serif", serif;
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Added padding to the body */
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  width: 750px;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+/* INTRO */
+img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Added margin to space out images from text */
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.prep {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.prep .prep-title {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: hsl(332, 51%, 32%);
+}
+
+.ingredients,
+.instructions,
+.nutrition {
+  margin-bottom: 20px; /* Added margin for spacing */
+}
+
+/* NUTRITION */
+
+table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr {
+  line-height: 2.7rem;
+  border-bottom: 0.1px solid hsl(32, 21%, 76%);
+}
+
+/* Media */
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
